@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, minimum-scale=0.8">
+        <meta name="description" content="Book your theatre tickets here!">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="icon" href="#">
+        <title>Theatre Tickets</title>
+    </head>
+    <body>
+        <button id="btn_return">&lt;&lt; Return to Programming Skills</button>
+        <main> 
+            <div id="mainWrapper">
+                <div id="mainContentContainer">
+                    <form>
+                        <div class="formInput">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" required>
+                        </div>
+                        <div>
+                            <div class="formInput">
+                                <label for="address_line1">Address line 1</label>
+                                <input id="address_line1" type="text" required>
+                            </div>
+                            <div class="formInput">
+                                <label for="address_line2">Address line 2</label>
+                                <input id="address_line2" type="text">
+                            </div class="formInput">
+                            <div class="formInput">
+                                <label for="address_line3">Address line 3</label>
+                                <input id="address_line3" type="text">
+                            </div>
+                            <div class="formInput">
+                                <label for="address_townCity" required>Town/City</label>
+                                <input id="address_townCity" type="text" required>
+                            </div>
+                            <div class="formInput">
+                                <label for="address_county" required>County</label>
+                                <input id="address_county" type="text" required>
+                            </div>
+                            <div class="formInput">
+                                <label for="address_postcode" required>Postal code</label>
+                                <input id="address_postcode" type="text" required>
+                            </div>
+                        </div>
+                        <div class="formInput">
+                            <label for="showSelect">Select show</label>
+                            <select id="showSelect" required>
+                                <option disabled selected hidden>Select show</option>
+                                <option id="show_phantomOfTheOpera" value="phantomOfTheOpera">Phantom of the Opera (£79)</option>
+                                <option id="show_hamilton" value="hamilton">Hamilton (£85)</option>
+                                <option id="show_lionKing" value="lionKing">Lion King (£67)</option>
+                                <option id="show_missSaigon" value="missSaigon">Miss Saigon (£83)</option>
+                            </select>
+                        </div>
+                        <div class="formInput">
+                            <label for="seats">No. of seats required (To book more than 15 seats, please contact the venue ahead of time)</label>
+                            <input id="seats" type="number" min="1" max="15" step="1" placeholder="1" required>
+                        </div>
+                        <div>
+                            <div class="formInput">
+                                <label for="deliverySelect">Ticket delivery method</label>
+                                <select id="deliverySelect" required>
+                                    <option disabled selected hidden>Select ticket delivery method</option>
+                                    <option id="delivery_eTicket" value="eTicket">e-Ticket (Free)</option>
+                                    <option id="delivery_collect" value="collect">Collect from Box Office (£1.50)</option>
+                                    <option id="delivery_posted" value="posted">Posted (£3.99)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button id="submit" type="submit">Confirm booking</button>
+                    </form>
+                    <p id="detailCheck"></p>
+                    <p id="costOutput"></p>
+                </div>
+            </div>
+        </main>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

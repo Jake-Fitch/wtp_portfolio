@@ -1,0 +1,251 @@
+/* UNIVERSAL APPLICATION ==================================================================================================== */
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+:root {
+    --structure-bg-color: #e2ba86;
+    --content-bg-color: #e9d3ba;
+    --def-shadow-col: #000;
+}
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 1.5rem;
+}
+    ::-webkit-scrollbar-track {
+        background: #464646;
+        box-shadow: inset 0 0 1rem var(--def-shadow-col);
+    }
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(#b6b6b6, rgba(110, 110, 110, 0) 100%), url(images/paw.png) no-repeat;
+        background-size: 80%;
+        background-position: center;
+        border-radius: 0.8rem;
+        box-shadow: 0 0 1rem var(--def-shadow-col);
+
+    }
+        ::-webkit-scrollbar-thumb:hover {
+            border-radius: 0.4rem;
+            box-shadow: 0 0 1rem var(--def-shadow-col);
+            background-size: 90%;
+        }
+    ::-webkit-scrollbar-corner {
+        background-color: #464646;
+    }
+/* BODY ITEMS ==================================================================================================== */
+    body {
+        /* Dimensions */
+        width: 100%;
+        /* Formatting */
+        background-image: url(images/pawCollage.jpg);
+        background-size: 50%;
+        background-attachment: fixed;
+        color: #2c2c2c;
+    }
+        #container {
+            /* Dimensions */
+            width: 100%;
+        }
+            nav {
+                /* Dimensions */
+                width: 100%;
+                height: fit-content;
+                /* Coloring */
+                background-image: url(images/parchmentTexture.jpg);
+                background-size: 100%;
+                /* Formatting */
+                position: relative;
+                z-index: 2;
+                /* Flex */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                /* Effects */
+                box-shadow: 0 0 2rem var(--def-shadow-color), inset 0 2rem 2rem -2rem var(--def-shadow-col);
+            }
+                nav img {
+                    /* Dimensions */
+                    height: 5rem;
+                    /* Formatting */
+                    padding: 1rem;
+                    /* Effects */
+                    filter: drop-shadow(0 0.2rem 0.4rem var(--def-shadow-col))
+                }
+                nav ul {
+                    /* Formatting */
+                    width: auto;
+                    height: 100%;
+                    /* Flex */
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-items: flex-end;
+                    /* Formatting */
+                    list-style-type: none;
+                }
+                    nav a {
+                        /* Formatting */
+                        font-size: 1.5rem;
+                        text-decoration: none;
+                        display: block;
+                        padding: 0.5rem 1rem 0.5rem 1rem;
+                        margin: 1rem;
+                        border-radius: 1rem;
+                        /* Coloring */
+                        color: #000;
+                        /* Effects */
+                        box-shadow: 0 0.4rem 0.8rem var(--def-shadow-col);
+                        text-shadow: -0.2rem 0.2rem 0 #fff, 0.2rem 0.2rem 0 #fff, 0.2rem -0.2rem 0 #fff, -0.2rem -0.2rem 0 #fff;
+                        background: linear-gradient(#fff,rgb(0, 0, 0, 0) 100%), url(images/pawCollage.jpg);
+                        background-size: 200%;
+                        /* Animation */
+                        transition: box-shadow 0.1s, font-size 0.2s, margin 0.2s;
+                    }
+                        nav a:hover {
+                            /* Formatting */
+                            font-size: 1.4rem;
+                            margin: 1.1rem;
+                            /* Coloring */
+                            /* Effetcs */
+                            box-shadow: 0 0.2rem 0.4rem var(--def-shadow-col);
+                        }
+            #heroImg {
+                /* Dimensions */
+                width: 80%;
+                /* Formatting */
+                margin: 0 0 0 10%;
+                position: relative;
+                /* Effects */
+                filter: drop-shadow(0 0.5rem 1rem var(--def-shadow-col));
+            }
+            main {
+                /* Dimensions */
+                width: 90%;
+                /* Formatting */
+                margin: 0 auto;
+                padding: 1rem;
+                border-radius: 2rem;
+                position: relative;
+                z-index: 1;
+                /* Coloring */
+                background-image: url(images/parchmentTexture.jpg);
+                background-size: 100%;
+                /* Effects */
+                box-shadow: 0 1rem 2rem var(--def-shadow-col);
+                /* Flex */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                /* Animation */
+                transition: flex-wrap 0.2s;
+            }
+                main img {
+                    width: 100%;
+                    height: auto;
+                }
+                section {
+                    width: 90%;
+                    box-shadow: inset 0 0 2rem var(--def-shadow-col);
+                    border-radius: 2rem;
+                    margin: 1rem 0 1rem 0;
+                    padding: 1rem;
+                    background: radial-gradient(ellipse, rgba(255,255,255,1), rgba(255,255,255,.8)), url(images/furPattern.png);
+                    background-size: 100%;
+                    text-shadow: -0.2rem 0.2rem 0 #fff, 0.2rem 0.2rem 0 #fff, 0.2rem -0.2rem 0 #fff, -0.2rem -0.2rem 0 #fff;
+                }
+                main h1 {
+                    padding: 2rem;
+                }
+                    main h2 {
+                        padding: 2rem;
+                    }
+                        main h3 {
+                            padding: 2rem;
+                        }
+                main p {
+                    padding: 2rem;
+                }
+                .sectionLink {
+                    /* Dimensions */
+                    width: fit-content;
+                    /* Formatting */
+                    font-size: 1.5rem;
+                    text-decoration: none;
+                    display: block;
+                    padding: 1rem 2rem 1rem 2rem;
+                    margin: 1rem;
+                    border-radius: 1rem;
+                    background: linear-gradient(to right, #fff,rgb(0, 0, 0, 0) 100%), url(images/pawCollage.jpg);
+                    background-size: auto 500%;
+                    /* Coloring */
+                    color: #000;
+                    /* Effects */
+                    box-shadow: 0 0.4rem 0.8rem var(--def-shadow-col);
+                    text-shadow: -0.2rem 0.2rem 0 #fff, 0.2rem 0.2rem 0 #fff, 0.2rem -0.2rem 0 #fff, -0.2rem -0.2rem 0 #fff;
+                    /* Animation */
+                    transition: box-shadow 0.2s, font-size 0.2s, margin 0.2s;
+                }
+                    .sectionLink:hover {
+                        /* Formatting */
+                        font-size: 1.4rem;
+                        margin: 1.1rem;
+                        /* Effects */
+                        box-shadow: 0 0.2rem 0.4rem var(--def-shadow-col);
+                    }
+            footer {
+                /* Dimensions */
+                width: 100%;
+                height: auto;
+                /* Coloring */
+                background-color: var(--structure-bg-color);
+                /* Formatting */
+                position: relative;
+                z-index: 1;
+                margin-top: 5rem;
+                /* Flex */
+                display: flex;
+                flex-flow: row wrap;
+                /* Effects */
+                box-shadow: 0 0 2rem var(--def-shadow-col), inset 0 -2rem 2rem -2rem var(--def-shadow-col)
+            }
+                footer ul {
+                    list-style-type: none;
+                     /* Flex */
+                    display: flex;
+                    flex-direction: row;
+                    align-items: baseline;
+                }
+                    footer a {
+                        display: block;
+                        color: #fff;
+                        text-decoration: none;
+                        padding: 1rem 2rem 1rem 2rem;
+                        text-shadow: 0 0 1rem var(--def-shadow-col);
+                        transition: padding 0.2s;
+                    }
+                        footer a:hover {
+                            padding: 1rem 4rem 1rem 4rem;
+                        }
+/* ==================================================================================================== */
+/* MEDIA QUERIES */
+/* ==================================================================================================== */
+@media (min-width: 1000px) {
+    main {
+        flex-flow: row wrap;
+    }
+        section {
+            width: 40%;
+            margin: 1rem;
+        }
+}
+/* ==================================================================================================== */
+/* REFERENCES */
+/* ---------------------------------------------------------------------------------------------------- */
+/* furPattern.png: kisscc0.com/clipart/computer-icons-tile-pattern-design-a-book-for-stud-1lg2bc */
+/* (edited) paw.png: en.m.wikipedia.org/wiki/File:Black_Paw.svg */
+/* parchmentTexture.jpg: naldzgraphics.net/free-seamless-paper-textures */
+/* pixabay.com/vectors/sign-post-signage-wood-wooden-576727 */
+/* pinterest.com/pin/648096202608897282 */
+/* ==================================================================================================== */

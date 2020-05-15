@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, minimum-scale=0.8">
+        <meta name="description" content="Use the fruit machine">
+        <link rel="stylesheet" rel="stylesheet" href="styles/style.css">
+        <link rel="icon" href="images/fruit1.png">
+        <title>Fruit Machine</title>
+    </head>
+    <body>
+        <button id="btn_return">&lt;&lt; Return to Programming Skills</button>
+        <main> 
+            <div id="mainWrapper">
+                <div id="gameWindow">
+                    <div id="counters">
+                        <div class="counter">
+                            <label for="txt_credit">Credit</label>
+                            <p id="txt_credit"></p>
+                        </div>
+                        <div class="counter">
+                            <label for="txt_winnings">Winnings</label>
+                            <p id="txt_winnings"></p>
+                        </div>
+                    </div>
+                    <div id="fruitContainer">
+                        <img id="img_slot1" src="" alt="Image slot 1">
+                        <img id="img_slot2" src="" alt="Image slot 2">
+                        <img id="img_slot3" src="" alt="Image slot 3">
+                    </div>
+                    <p id="message"></p>
+                    <div>
+                        <button id="btn_spin">Spin</button>
+                        <button id="btn_credit">Credit</button>
+                        <button id="btn_collect">Collect</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
